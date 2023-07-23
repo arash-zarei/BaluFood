@@ -7,7 +7,7 @@ const Guide = () => {
     <div className="mt-14 grid grid-cols-1 text-center gap-7 sm:grid-cols-3">
       <Link href="/menu" className="guide">Menu</Link>
       <Link href="/categories" className="guide">Categories</Link>
-      <Link href="/discount" className="guide">Discount</Link>
+      <Link href="/" className="guide">Discount</Link>
     </div>
   );
 };
