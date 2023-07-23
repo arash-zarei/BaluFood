@@ -11,7 +11,7 @@ const Card = ({ data }) => {
     const { id, name, price, details, discount } = data
 
     return (
-        <div className='p-2 rounded-xl shadow-lg shadow-primary'>
+        <div className='p-2 rounded-xl shadow-sm shadow-primary'>
             <div className='relative'>
 
             <img src={`/images/${id}.jpeg`} alt={name} className="w-full rounded-lg" />
