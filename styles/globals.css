@@ -1,26 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+  * {
+    font-family: "Poppins", sans-serif;
   }
-  body {
-    color: white;
-    background: black;
+
+  .selected {
+    @apply rounded-md bg-white shadow-sm shadow-primary py-1 px-2 sm:mr-5 cursor-pointer text-primary;
+  }
+
+  .subContainer {
+    @apply max-w-4xl mx-auto mt-20 px-4;
+  }
+
+  .title {
+    @apply text-2xl border-b-4 border-primary w-fit;
+  }
+
+  .subTitle{
+    @apply text-primary font-extrabold text-lg mt-11
+  }
+
+  .attribute{
+    @apply px-12 py-6 flex items-center justify-center gap-4 flex-col rounded-2xl bg-white shadow-2xl shadow-primary hover:shadow-none transition
+  }
+
+  .guide{
+    @apply py-2 px-5 rounded-md shadow-2xl shadow-primary bg-white hover:shadow-none transition-all
   }
 }
